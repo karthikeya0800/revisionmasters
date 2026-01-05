@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master TSSPDCL/TSNPDCL Sub-Engineer Exam with India's Most Complete Online Course in Telugu. Expert-crafted content from 25,000+ previous year questions. 100% Telugu instruction with 1-year full access.">
+    <meta name="keywords" content="TSSPDCL, TSNPDCL, Sub Engineer, Electrical Engineering, Telugu Course, Online Course, Power Distribution, Telangana, Sub Engineer Exam, Revision Masters">
+    <meta name="author" content="Revision Masters">
+    <meta property="og:title" content="Revision Masters - TSSPDCL/TSNPDCL Sub-Engineer Course">
+    <meta property="og:description" content="Master the TSSPDCL/TSNPDCL Sub-Engineer Exam with India's Most Complete Online Course in Telugu">
+    <meta property="og:type" content="website">
+    <title>Revision Masters | TSSPDCL/TSNPDCL Sub-Engineer Exam Course in Telugu</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0066FF;
+            --primary-hover: #1A7AFF;
+            --secondary: #00C2A8;
+            --secondary-hover: #24D3BD;
+            --accent: #FFC857;
+            --bg-base: #0B1020;
+            --surface-light: #101628;
+            --surface-subtle: #151B2E;
+            --border: #2A3350;
+            --text-primary: #F5F7FF;
+            --text-secondary: #C3C8E6;
+            --text-muted: #8A92BE;
+            --text-on-primary: #FFFFFF;
+            --text-on-accent: #1A1A1A;
+            --success: #1CC88A;
+            --warning: #F6C23E;
+            --error: #E74A3B;
+            --info: #17A2B8;
+            --signal-orange: #FF6B35;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 18px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--surface-light);
+            border-bottom: 2px solid var(--border);
+            padding: 1.2rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-svg {
+            width: 50px;
+            height: 50px;
+        }
+
+        .logo-text {
+            font-size: 26px;
+            font-weight: bold;
+            color: var(--text-primary);
+        }
+
+        .logo-accent {
+            color: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            color: var(--secondary);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .hero-highlight {
+            color: var(--accent);
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background-color: var(--surface-subtle);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 2px solid var(--border);
+            box-shadow: 0 8px 24px rgba(0, 102, 255, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 12px 32px rgba(0, 102, 255, 0.35);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Price Card */
+        .price-card {
+            background-color: var(--surface-light);
+            border: 2px solid var(--accent);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 24px rgba(255, 200, 87, 0.15);
+            margin-top: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .price-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 32px rgba(255, 200, 87, 0.25);
+        }
+
+        .early-bird-badge {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--text-on-accent);
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .price-content h3 {
+            font-size: 28px;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .pricing {
+            display: flex;
+            align-items: baseline;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .original-price {
+            font-size: 24px;
+            color: var(--text-muted);
+            text-decoration: line-through;
+        }
+
+        .discounted-price {
+            font-size: 42px;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .discount-badge {
+            background-color: var(--success);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .price-features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .price-features li {
+            padding: 0.8rem 0;
+            font-size: 18px;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .price-features li:before {
+            content: "⚡";
+            color: var(--accent);
+            font-size: 22px;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background-color: var(--accent);
+            color: var(--text-on-accent);
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 12px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 12px rgba(255, 200, 87, 0.3);
+            text-align: center;
+        }
+
+        .btn-primary:hover {
+            background-color: #FFD470;
+            box-shadow: 0 6px 20px rgba(255, 200, 87, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: var(--surface-light);
+            color: var(--text-primary);
+            border: 2px solid var(--primary);
+            padding: 1rem 2.5rem;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--surface-subtle);
+            box-shadow: 0 4px 12px rgba(0, 102, 255, 0.3);
+        }
+
+        /* Content Sections */
+        section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--text-primary);
+        }
+
+        .section-title-accent {
+            color: var(--secondary);
+        }
+
+        /* Why Choose Section */
+        .why-choose-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background-color: var(--surface-light);
+            border: 2px solid var(--border);
+            border-radius: 16px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 28px rgba(0, 102, 255, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-card h3 {
+            font-size: 24px;
+            margin-bottom: 1.2rem;
+            color: var(--secondary);
+        }
+
+        .feature-card p {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .feature-card ul {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .feature-card ul li {
+            padding: 0.6rem 0;
+            font-size: 17px;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: start;
+            gap: 10px;
+        }
+
+        .feature-card ul li:before {
+            content: "✓";
+            color: var(--success);
+            font-weight: bold;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        /* Syllabus Section */
+        .syllabus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .syllabus-card {
+            background-color: var(--surface-light);
+            border-left: 4px solid var(--signal-orange);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .syllabus-card:hover {
+            background-color: var(--surface-subtle);
+            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.2);
+            transform: translateX(8px);
+        }
+
+        .syllabus-card h4 {
+            font-size: 20px;
+            margin-bottom: 1rem;
+            color: var(--signal-orange);
+        }
+
+        .syllabus-card ul {
+            list-style: none;
+        }
+
+        .syllabus-card ul li {
+            padding: 0.5rem 0;
+            font-size: 16px;
+            color: var(--text-secondary);
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 900px;
+            margin: 3rem auto 0;
+        }
+
+        .faq-item {
+            background-color: var(--surface-light);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--primary);
+        }
+
+        .faq-question {
+            padding: 1.8rem;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background-color: var(--surface-subtle);
+        }
+
+        .faq-icon {
+            font-size: 24px;
+            color: var(--secondary);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            padding: 0 1.8rem;
+            color: var(--text-secondary);
+            font-size: 18px;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 1.5rem 1.8rem;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Testimonials Section */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--surface-light);
+            border: 2px solid var(--border);
+            border-radius: 16px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            border-color: var(--secondary);
+            box-shadow: 0 12px 28px rgba(0, 194, 168, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .quote-icon {
+            font-size: 48px;
+            color: var(--secondary);
+            opacity: 0.3;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .testimonial-content {
+            font-size: 18px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .author-info h4 {
+            font-size: 19px;
+            color: var(--text-primary);
+            margin-bottom: 0.3rem;
+        }
+
+        .author-info p {
+            font-size: 16px;
+            color: var(--text-muted);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background-color: var(--surface-light);
+            border-radius: 16px;
+            padding: 4rem;
+            max-width: 800px;
+            margin: 3rem auto;
+            border: 2px solid var(--border);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .form-group label {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            padding: 1.2rem;
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            background-color: var(--surface-subtle);
+            color: var(--text-primary);
+            font-size: 17px;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--surface-light);
+            border-top: 2px solid var(--border);
+            padding: 4rem 2rem 2rem;
+            margin-top: 5rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            font-size: 22px;
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: var(--text-secondary);
+            font-size: 17px;
+            line-height: 1.8;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.8rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--secondary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: var(--surface-subtle);
+            border: 2px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0, 102, 255, 0.3);
+        }
+
+        .social-link svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--text-secondary);
+            transition: fill 0.3s ease;
+        }
+
+        .social-link:hover svg {
+            fill: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 16px;
+        }
+
+        .quick-links {
+            list-style: none;
+        }
+
+        .quick-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .quick-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .quick-links a:hover {
+            color: var(--secondary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .hero-section {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                padding: 3rem 2rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .why-choose-grid,
+            .syllabus-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                gap: 1.5rem;
+            }
+
+            nav a {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header nav {
+                display: none;
+            }
+
+            .header-container {
+                justify-content: center;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            .hero-content p {
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+
+            .contact-section {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .price-card {
+                padding: 2rem;
+            }
+
+            .discounted-price {
+                font-size: 36px;
+            }
+
+            .btn-primary {
+                padding: 1rem 2rem;
+                font-size: 18px;
+            }
+
+            body {
+                font-size: 16px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Animation for elements on scroll */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="#hero" class="logo">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="10" y="10" width="80" height="80" rx="12" fill="#0066FF"/>
+                    <path d="M30 35 L45 50 L70 25" stroke="#FFC857" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M30 55 L35 60 L45 50" stroke="#00C2A8" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="60" cy="65" r="8" fill="#FFC857"/>
+                    <rect x="25" y="70" width="25" height="8" rx="2" fill="#00C2A8"/>
+                </svg>
+                <span class="logo-text">Revision <span class="logo-accent">Masters</span></span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a onclick="scrollToSection('hero')">Home</a></li>
+                    <li><a onclick="scrollToSection('why-choose')">Why Choose Us</a></li>
+                    <li><a onclick="scrollToSection('syllabus')">Syllabus</a></li>
+                    <li><a onclick="scrollToSection('faq')">FAQs</a></li>
+                    <li><a onclick="scrollToSection('testimonials')">Testimonials</a></li>
+                    <li><a onclick="scrollToSection('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Video and Pricing -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Master the <span class="hero-highlight">TSSPDCL/TSNPDCL</span> Sub-Engineer Exam</h1>
+            <p>India's Most Complete Online Course in Telugu for aspiring Sub-Engineers in Telangana's power distribution sector</p>
+
+            <!-- Price Card -->
+            <div class="price-card">
+                <div class="early-bird-badge">🎯 EARLY BIRD OFFER - LIMITED TIME!</div>
+                <div class="price-content">
+                    <h3>Complete Sub-Engineer Course</h3>
+                    <div class="pricing">
+                        <span class="original-price">₹19,999</span>
+                        <span class="discounted-price">₹1,999</span>
+                        <span class="discount-badge">90% OFF</span>
+                    </div>
+                    <ul class="price-features">
+                        <li>100% Telugu Content</li>
+                        <li>1 Year Full Access</li>
+                        <li>25,000+ Practice Questions</li>
+                        <li>Live Q&A Sessions</li>
+                        <li>Downloadable Study Notes</li>
+                        <li>Previous Year Papers Solved</li>
+                    </ul>
+                    <a href="https://revisionmasters.systeme.io/payment" class="btn-primary">Enroll Now - Get 90% Off</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; text-align: center; color: var(--secondary);">Watch Free Sample Class</h2>
+            <div class="video-container" onclick="playVideo(this)">
+                <iframe 
+                    src="https://www.youtube.com/embed/cX7bjoaxHhg" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p style="text-align: center; margin-top: 1.5rem; color: var(--text-muted); font-size: 17px;">Click to watch Ohm's Law & Resistance - Basic Electrical Engineering</p>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section id="why-choose">
+        <h2 class="section-title">Why Choose <span class="section-title-accent">Revision Masters</span>?</h2>
+
+        <div class="why-choose-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3>Complete Syllabus Coverage</h3>
+                <p>Our course comprehensively covers the entire TSSPDCL/TSNPDCL sub-engineer examination syllabus, from fundamental electrical engineering concepts to advanced power distribution systems. Unlike fragmented tutorials, this structured course ensures no topic is left behind.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Expert-Crafted Content</h3>
+                <p>Designed exclusively for exam success, this course is built with precision from 25,000+ previous year questions, distilled across 200+ unique exam scenarios. Every concept, shortcut, and question type is directly mapped to real exam patterns.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">💡</div>
+                <h3>Dynamic Learning Experience</h3>
+                <p>Our course features a blend of learning methods:</p>
+                <ul>
+                    <li>Digital Blackboard Videos with step-by-step explanations</li>
+                    <li>Topic Mastery Videos for high-weightage subjects</li>
+                    <li>Live Q&A Sessions for direct doubt clarification</li>
+                    <li>Practice Question Banks with thousands of problems</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🗣️</div>
+                <h3>100% Telugu Medium</h3>
+                <p>All content is taught in Telugu for clarity and faster learning. No language barriers - understand every concept in your mother tongue with clear explanations and examples relevant to local context.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Strategic Exam Preparation</h3>
+                <p>Every topic is prioritized based on its weightage and relevance. From Basic Electrical Engineering to Power Systems, Control Systems, and advanced topics like PLC, SCADA, and Microcontrollers - every module is covered systematically.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3>Proven Success Record</h3>
+                <p>Thousands of aspirants have cleared the TSSPDCL/TSNPDCL examination using this course, securing positions as sub-engineers across Telangana's power distribution network. Join our community of successful engineers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Syllabus Section -->
+    <section id="syllabus">
+        <h2 class="section-title">Comprehensive <span class="section-title-accent">Syllabus Coverage</span></h2>
+        <p style="text-align: center; font-size: 19px; color: var(--text-secondary); max-width: 900px; margin: 0 auto 3rem;">Every topic is taught in a systematic, exam-oriented manner with priority based on weightage and relevance to maximize your score.</p>
+
+        <div class="syllabus-grid">
+            <div class="syllabus-card">
+                <h4>⚡ Core Electrical Engineering</h4>
+                <ul>
+                    <li>Basic Electrical Engineering</li>
+                    <li>Network Theory</li>
+                    <li>Measurements & Instrumentation</li>
+                    <li>EMFT (Electromagnetic Field Theory)</li>
+                </ul>
+            </div>
+
+            <div class="syllabus-card">
+                <h4>🔧 Electrical Machines</h4>
+                <ul>
+                    <li>DC Machines</li>
+                    <li>Induction Machines</li>
+                    <li>Synchronous Machines</li>
+                    <li>Special Machines</li>
+                </ul>
+            </div>
+
+            <div class="syllabus-card">
+                <h4>🏭 Power Systems</h4>
+                <ul>
+                    <li>Generation, Transmission & Distribution</li>
+                    <li>Fault Analysis & Protection</li>
+                    <li>Switchgear & Circuit Breakers</li>
+                    <li>HVDC & FACTS</li>
+                    <li>Stability & Load Flow</li>
+                </ul>
+            </div>
+
+            <div class="syllabus-card">
+                <h4>💻 Power Electronics & Drives</h4>
+                <ul>
+                    <li>Power Electronics Devices</li>
+                    <li>Electric Drives & Control</li>
+                    <li>Electric Vehicles Technology</li>
+                </ul>
+            </div>
+
+            <div class="syllabus-card">
+                <h4>🤖 Control & Automation</h4>
+                <ul>
+                    <li>Control Systems</li>
+                    <li>PLC & SCADA</li>
+                    <li>DCS (Distributed Control Systems)</li>
+                    <li>Microcontrollers (8051)</li>
+                    <li>Microprocessors (8085/8086)</li>
+                </ul>
+            </div>
+
+            <div class="syllabus-card">
+                <h4>🔌 Applied Electrical</h4>
+                <ul>
+                    <li>Electrical Installation & Wiring</li>
+                    <li>Electric Heating & Welding</li>
+                    <li>Lighting Systems</li>
+                    <li>Electric Traction</li>
+                </ul>
+            </div>
+
+            <div class="syllabus-card">
+                <h4>📡 Electronics & Communication</h4>
+                <ul>
+                    <li>Digital Electronics</li>
+                    <li>Analog Electronics</li>
+                    <li>Signals & Systems</li>
+                </ul>
+            </div>
+
+            <div class="syllabus-card">
+                <h4>📝 Exam Preparation</h4>
+                <ul>
+                    <li>Previous Year Papers (Solved)</li>
+                    <li>Mock Tests & Practice Sets</li>
+                    <li>Time Management Strategies</li>
+                    <li>Shortcut Techniques</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2 class="section-title">Frequently Asked <span class="section-title-accent">Questions</span></h2>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Is the entire course taught in Telugu?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, 100% of the course content is taught in Telugu. All video lectures, explanations, study materials, and practice questions are in Telugu to ensure you understand every concept clearly without any language barriers.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How long do I have access to the course?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    You get full access to the course for 1 complete year from the date of enrollment. This gives you plenty of time to study at your own pace, revise multiple times, and thoroughly prepare for the TSSPDCL/TSNPDCL examination.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What study materials are included in the course?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    The course includes comprehensive video lectures, downloadable PDF study notes, 25,000+ practice questions, previous year solved papers, topic-wise MCQs, mock tests, and regular live Q&A sessions with instructors for doubt clarification.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Is this course suitable for beginners?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Absolutely! The course is designed to take you from basic fundamentals to advanced concepts. Whether you're a beginner or looking to strengthen your existing knowledge, our structured approach ensures everyone can learn effectively.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>How are the course videos structured?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Our videos feature digital blackboard explanations with step-by-step problem solving, topic mastery deep-dives for high-weightage subjects, and practical examples. Each concept is explained clearly with hand-drawn diagrams for better retention.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Will I get previous year question papers?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, the course includes solved TSSPDCL/TSNPDCL previous year papers with detailed explanations. These are analyzed from 25,000+ questions across 200+ exam scenarios to help you understand actual exam patterns and question types.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Can I get my doubts clarified?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Yes! The course includes regular live Q&A sessions where you can directly interact with instructors and get your doubts cleared. You can also ask questions through our dedicated support channels.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Is the early bird discount limited?</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, the 90% early bird offer is available for a limited time only. The price will increase soon, so we recommend enrolling now to lock in this special discounted price of ₹1,999 instead of ₹19,999.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2 class="section-title">Success <span class="section-title-accent">Stories</span></h2>
+        <p style="text-align: center; font-size: 19px; color: var(--text-secondary); max-width: 900px; margin: 0 auto 3rem;">Join thousands of successful candidates who cleared TSSPDCL/TSNPDCL exams with Revision Masters</p>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <div class="testimonial-content">
+                    "Revision Masters transformed my preparation completely. The Telugu explanations made complex topics like power systems and control theory so easy to understand. I cleared TSSPDCL Sub-Engineer exam in my first attempt with a great rank!"
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">RS</div>
+                    <div class="author-info">
+                        <h4>Ravi Shankar</h4>
+                        <p>TSSPDCL Sub-Engineer, 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <div class="testimonial-content">
+                    "The practice questions from previous years were a game-changer. I solved over 10,000 questions during my preparation, and most of the exam questions were similar patterns. The strategic approach really helped me score high."
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">PK</div>
+                    <div class="author-info">
+                        <h4>Priya Kumari</h4>
+                        <p>TSNPDCL Sub-Engineer, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <div class="testimonial-content">
+                    "Being from a diploma background, I was worried about competing with B.Tech graduates. But Revision Masters' systematic coverage and concept clarity gave me the confidence to compete. Now I'm a proud Sub-Engineer at TSSPDCL!"
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">VR</div>
+                    <div class="author-info">
+                        <h4>Venkat Reddy</h4>
+                        <p>TSSPDCL Sub-Engineer, 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <div class="testimonial-content">
+                    "The live Q&A sessions were incredibly helpful. Whenever I got stuck on numerical problems or had doubts, I could get them cleared immediately. The digital blackboard videos made revision super easy before the exam."
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SK</div>
+                    <div class="author-info">
+                        <h4>Srinivas Kumar</h4>
+                        <p>TSNPDCL Sub-Engineer, 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <div class="testimonial-content">
+                    "The course content is exam-focused and covers every high-weightage topic thoroughly. I especially loved the modules on electrical machines and power distribution. Worth every rupee - actually saved me lakhs on coaching centers!"
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">LM</div>
+                    <div class="author-info">
+                        <h4>Lakshmi Madhavi</h4>
+                        <p>TSSPDCL Sub-Engineer, 2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <div class="testimonial-content">
+                    "As a working professional, the flexibility to study at my own pace was crucial. The 1-year access allowed me to balance my job and preparation perfectly. Finally achieved my dream of becoming a Sub-Engineer!"
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">AM</div>
+                    <div class="author-info">
+                        <h4>Anil Mohan</h4>
+                        <p>TSNPDCL Sub-Engineer, 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In <span class="section-title-accent">Touch</span></h2>
+        <p style="text-align: center; font-size: 19px; color: var(--text-secondary); max-width: 700px; margin: 0 auto 3rem;">Have questions? We're here to help! Send us a message and our team will respond within 24 hours.</p>
+
+        <div class="contact-section">
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Revision Masters</h3>
+                <p>India's most comprehensive TSSPDCL/TSNPDCL Sub-Engineer exam preparation platform in Telugu. Empowering thousands of aspirants to achieve their dreams of securing government jobs in Telangana's power sector.</p>
+                <div class="social-links">
+                    <a href="https://www.youtube.com/@ECETFDHDEEE" class="social-link" target="_blank" aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/revision.masters/" class="social-link" target="_blank" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/revisionmasta" class="social-link" target="_blank" aria-label="Twitter/X">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.whatsapp.com/channel/0029Vb6SD8LFSAt5b1NQkC40/196" class="social-link" target="_blank" aria-label="WhatsApp">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" target="_blank" aria-label="Telegram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" target="_blank" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" target="_blank" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a onclick="scrollToSection('hero')">Home</a></li>
+                    <li><a onclick="scrollToSection('why-choose')">Why Choose Us</a></li>
+                    <li><a onclick="scrollToSection('syllabus')">Course Syllabus</a></li>
+                    <li><a onclick="scrollToSection('faq')">FAQs</a></li>
+                    <li><a onclick="scrollToSection('testimonials')">Success Stories</a></li>
+                    <li><a onclick="scrollToSection('contact')">Contact Us</a></li>
+                    <li><a href="https://revisionmasters.systeme.io/payment" target="_blank">Enroll Now</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong><br>
+                <a href="mailto:revisionmasters18@gmail.com">revisionmasters18@gmail.com</a></p>
+                <p><strong>Phone:</strong><br>
+                <a href="tel:+919876543210">+91 98765 43210</a></p>
+                <p><strong>Address:</strong><br>
+                Hyderabad, Telangana, India</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Exam Information</h3>
+                <p>This course is specifically designed for:</p>
+                <ul class="quick-links">
+                    <li>TSSPDCL Sub-Engineer</li>
+                    <li>TSNPDCL Sub-Engineer</li>
+                    <li>TGGENCO Exams</li>
+                    <li>TGTRANSCO Exams</li>
+                    <li>Other Telangana Power Sector Exams</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Revision Masters. All rights reserved. | Empowering Engineers, Transforming Careers | Made with ⚡ for Telugu Aspirants</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll to section
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        // Toggle FAQ
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const isActive = faqItem.classList.contains('active');
+
+            // Close all FAQs
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Open clicked FAQ if it wasn't active
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+
+        // Video interaction
+        function playVideo(container) {
+            const iframe = container.querySelector('iframe');
+            const src = iframe.src;
+
+            // Add autoplay parameter if not already present
+            if (src.indexOf('autoplay=1') === -1) {
+                iframe.src = src + (src.indexOf('?') === -1 ? '?' : '&') + 'autoplay=1';
+            }
+        }
+
+        // Handle contact form submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Create mailto link
+            const subject = encodeURIComponent('Inquiry from Revision Masters Website');
+            const body = encodeURIComponent(`Email: ${email}
+
+Message:
+${message}`);
+            window.location.href = `mailto:revisionmasters18@gmail.com?subject=${subject}&body=${body}`;
+
+            // Show success message
+            alert('Thank you for your message! Your email client will open to send the message.');
+
+            // Reset form
+            event.target.reset();
+        }
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all feature cards and other elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const elementsToAnimate = document.querySelectorAll('.feature-card, .syllabus-card, .testimonial-card, .faq-item');
+            elementsToAnimate.forEach(el => {
+                el.classList.add('fade-in');
+                observer.observe(el);
+            });
+        });
+
+        // Add active state to navigation on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollY = window.pageYOffset;
+
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 100;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    document.querySelectorAll(`nav a[onclick*="${sectionId}"]`).forEach(link => {
+                        link.style.color = 'var(--secondary)';
+                    });
+                } else {
+                    document.querySelectorAll(`nav a[onclick*="${sectionId}"]`).forEach(link => {
+                        link.style.color = 'var(--text-secondary)';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
