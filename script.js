@@ -35,23 +35,46 @@ function playVideo(container) {
 
 // Handle contact form submission
 function handleSubmit(event) {
+    const form = document.getElementById('form');
+    const result = document.getElementById('result');
+
     event.preventDefault();
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+    result.innerHTML = "Please wait..."
 
-    // Create mailto link
-    const subject = encodeURIComponent('Inquiry from Revision Masters Website');
-    const body = encodeURIComponent(`Email: ${email}
+    fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: json
+    })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = json.message;
+                // alert(json.message)
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+                // alert(json.message)
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+            // alert("Something went wrong!")
+        })
+        .then(function () {
+            form.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 3000);
+        });
 
-Message:
-${message}`);
-    window.location.href = `mailto:revisionmasters18@gmail.com?subject=${subject}&body=${body}`;
-
-    // Show success message
-    alert('Thank you for your message! Your email client will open to send the message.');
-
-    // Reset form
-    event.target.reset();
 }
 
 // Intersection Observer for fade-in animations
