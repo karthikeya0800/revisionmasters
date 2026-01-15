@@ -33,7 +33,7 @@
                 </svg>
                 <span class="logo-text">Revision <span class="logo-accent">Masters</span></span>
             </a>
-            
+
             <nav class="desktop-nav">
                 <ul>
                     <li><a onclick="scrollToSection('hero')">Home</a></li>
@@ -42,16 +42,19 @@
                     <li><a onclick="scrollToSection('faq')">FAQs</a></li>
                     <li><a onclick="scrollToSection('testimonials')">Testimonials</a></li>
                     <li><a onclick="scrollToSection('contact')">Contact</a></li>
+                    <li><a href="https://revisionmasters.systeme.io/en/login" target="_blank">Login</a></li>
                 </ul>
             </nav>
 
             <button class="menu-toggle" aria-label="Toggle navigation">
-                <svg class="menu-icon icon-hamburger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="menu-icon icon-hamburger" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="3" y1="12" x2="21" y2="12"></line>
                     <line x1="3" y1="6" x2="21" y2="6"></line>
                     <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg>
-                <svg class="menu-icon icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="menu-icon icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <line x1="18" y1="6" x2="6" y2="18"></line>
                     <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
@@ -66,6 +69,7 @@
                 <li><a onclick="scrollToSection('faq')">FAQs</a></li>
                 <li><a onclick="scrollToSection('testimonials')">Testimonials</a></li>
                 <li><a onclick="scrollToSection('contact')">Contact</a></li>
+                <li><a href="https://revisionmasters.systeme.io/en/login" target="_blank">Login</a></li>
             </ul>
         </div>
 
@@ -103,16 +107,33 @@
         </div>
 
         <div>
-            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; text-align: center; color: var(--secondary);">Watch Free
-                Sample Class</h2>
-            <div class="video-container" onclick="playVideo(this)">
-                <iframe src="https://www.youtube.com/embed/cX7bjoaxHhg"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+            <h2 style="font-size: 2rem; margin-bottom: 1.5rem; text-align: center; color: var(--secondary);">
+                Watch Free Sample Classes
+            </h2>
+            <div class="video-card-container">
+                <div class="video-card">
+                    <p style="text-align: center; margin-top: 1.5rem; color: var(--text-muted); font-size: 17px;">
+                        Ohm's Law & Resistance - Basic Electrical Engineering
+                    </p>
+                    <div class="video-container" onclick="playVideo(this)">
+                        <iframe src="https://www.youtube.com/embed/cX7bjoaxHhg"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <p style="text-align: center; margin-top: 1.5rem; color: var(--text-muted); font-size: 17px;">
+                        Electrical Installations & Estimations
+                    </p>
+                    <div class="video-container" onclick="playVideo(this)">
+                        <iframe src="https://youtube.com/embed/vzuM5287Ihk"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
             </div>
-            <p style="text-align: center; margin-top: 1.5rem; color: var(--text-muted); font-size: 17px;">Click to watch
-                Ohm's Law & Resistance - Basic Electrical Engineering</p>
         </div>
     </section>
 
@@ -476,7 +497,8 @@
             Have questions? We're here to help! Send us a message and our team will respond within 24 hours.</p>
 
         <div class="contact-section">
-            <form id="form" class="contact-form" onsubmit="handleSubmit(event)" action="https://api.web3forms.com/submit" method="POST">
+            <form id="form" class="contact-form" onsubmit="handleSubmit(event)"
+                action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="e5bf3bf5-a405-4e7f-a76b-dfcde3ebe576">
                 <input type="hidden" name="_redirect" value="">
                 <div class="form-group">
@@ -486,7 +508,8 @@
 
                 <div class="form-group">
                     <label for="message">Your Message</label>
-                    <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+                    <textarea id="message" name="message" placeholder="Tell us how we can help you..."
+                        required></textarea>
                 </div>
 
                 <button type="submit" class="btn-primary">Send Message</button>
@@ -596,7 +619,7 @@
         </div>
     </footer>
     <script src="script.js"></script>
-    
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const toggleButton = document.querySelector('.menu-toggle');
@@ -613,7 +636,7 @@
             }
 
             // Toggle on button click
-            if(toggleButton) {
+            if (toggleButton) {
                 toggleButton.addEventListener('click', (e) => {
                     e.stopPropagation();
                     toggleMenu();
@@ -621,7 +644,7 @@
             }
 
             // Close when clicking the overlay
-            if(overlay) {
+            if (overlay) {
                 overlay.addEventListener('click', closeMenu);
             }
 
@@ -631,7 +654,7 @@
                     closeMenu();
                 });
             });
-            
+
             // Close on Escape key
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape') closeMenu();
@@ -641,10 +664,11 @@
         // Helper for scroll (retaining your existing logic pattern)
         function scrollToSection(id) {
             const element = document.getElementById(id);
-            if(element) {
+            if (element) {
                 element.scrollIntoView({ behavior: 'smooth' });
             }
         }
     </script>
 </body>
+
 </html>
