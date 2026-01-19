@@ -441,7 +441,6 @@ body.menu-open .icon-close {
 }
 
 .price-features li {
-    padding: 0.8rem 0;
     font-size: 18px;
     color: var(--text-secondary);
     display: flex;
