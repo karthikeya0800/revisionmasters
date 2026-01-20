@@ -178,7 +178,7 @@ header {
     color: var(--accent);
 }
 
-/* Desktop Nav (Renamed for clarity, logic unchanged)*/
+/* Desktop Nav (Renamed for clarity, logic unchanged) */
 .desktop-nav ul {
     display: flex;
     list-style: none;
