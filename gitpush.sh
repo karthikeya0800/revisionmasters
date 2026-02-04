@@ -1,4 +1,4 @@
 git pull origin main
 git add .
-git commit -m "updated website content to include all exams"
+git commit -m "added demovideos file"
 git push origin main
